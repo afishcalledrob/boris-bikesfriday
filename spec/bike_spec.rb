@@ -13,5 +13,8 @@ describe Bike do
   # three expectations... should be three clearly separated test cases,
   # with single expection in each test
   # i.e. 'has broken attribute which can be set to true or false'
-
+    it 'can be reported as broken' do
+      subject.report_broken
+      expect(subject).to be_broken
+    end
 end
